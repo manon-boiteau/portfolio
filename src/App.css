@@ -13,6 +13,7 @@
 }
 .wrapper {
   padding: 2rem;
+  margin: 0 2rem;
 }
 body {
   font-family: "Oxygen", sans-serif;
@@ -36,7 +37,6 @@ header div.wrapper {
   justify-content: space-between;
   border-bottom: 1px solid black;
   padding: 1rem 0;
-  margin: 0 2rem;
 }
 header div.wrapper > div {
   margin-right: 8rem;
@@ -65,3 +65,30 @@ header nav a:hover {
 }
 
 /* FOOTER */
+footer {
+  margin-top: 2rem;
+}
+footer div.wrapper {
+  display: flex;
+  padding: 1rem 0;
+  border-top: 1px solid black;
+  text-transform: uppercase;
+}
+footer a {
+  text-decoration: underline;
+}
+footer a:hover {
+  color: var(--link-hover);
+}
+footer div.footer_social {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  margin-left: 8rem;
+}
+footer div.footer_social div {
+  margin-left: 2rem;
+}
+footer div.footer_social div a:not(:last-child) {
+  margin-right: 2rem;
+}
