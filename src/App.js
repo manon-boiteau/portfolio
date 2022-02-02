@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from "./containers/Header";
 import Home from "./containers/Home";
@@ -14,26 +14,19 @@ function App() {
   return (
     <Router>
       <Header />
-      <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/projects">
-          <Projects />
-        </Route>
-        <Route path="/articles">
-          <Articles />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-        <Route path="*">
-          <NoMatch />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/about" element={<About />} />
+
+        <Route path="/projects" element={<Projects />} />
+
+        <Route path="/articles" element={<Articles />} />
+
+        <Route path="/contact" element={<Contact />} />
+
+        <Route path="/" element={<Home />} />
+
+        <Route path="*" element={<NoMatch />} />
+      </Routes>
       <Footer />
     </Router>
   );
