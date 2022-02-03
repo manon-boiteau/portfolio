@@ -12,7 +12,7 @@
   scroll-behavior: smooth;
 }
 .wrapper {
-  padding: 2rem;
+  padding: 2rem 0;
   margin: 0 2rem;
 }
 body {
@@ -27,15 +27,31 @@ h1 {
   font-weight: 400;
   font-size: 4rem;
 }
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+p {
+  line-height: 1.4rem;
+}
 
 /* HEADER */
 header {
-  margin-bottom: 2rem;
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 header div.wrapper {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid black;
+  box-shadow: rgba(171, 171, 171, 0.45) 0px 20px 20px -20px;
   padding: 1rem 0;
 }
 header div.wrapper > div {
@@ -64,12 +80,64 @@ header nav a:hover {
   color: var(--link-hover);
 }
 
-/* FOOTER */
-footer {
+/* ABOUT */
+.about span {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.about a {
+  font-weight: 400;
+  color: #ff6347;
+  text-decoration: underline;
+}
+.about > div {
+  display: flex;
+}
+.about > div div {
+  flex: 1;
+}
+div.about__photo {
+  margin-right: 2rem;
+}
+div.about__photo > div:first-child {
+  background-color: tomato;
+  height: 80%;
+}
+div.about__photo-techno {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 20%;
+}
+div.about__photo-techno img {
+  width: 4rem;
+  height: 4rem;
+}
+div.about__name {
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+div.about__infos > div:first-child p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+div.about__infos > div:nth-child(2) {
+  margin: 2rem 0;
+  text-align: center;
+}
+div.about__infos > div:nth-child(2) div {
   margin-top: 2rem;
 }
+div.about__infos > div:nth-child(2) div p {
+  line-height: 2rem;
+}
+div.about__infos > div:last-child {
+  text-align: end;
+}
+
+/* FOOTER */
 footer div.wrapper {
   display: flex;
+  align-items: center;
   padding: 1rem 0;
   border-top: 1px solid black;
   text-transform: uppercase;
@@ -80,15 +148,18 @@ footer a {
 footer a:hover {
   color: var(--link-hover);
 }
-footer div.footer_social {
+footer div.footer__social {
   display: flex;
   justify-content: flex-end;
   flex: 1;
   margin-left: 8rem;
 }
-footer div.footer_social div {
+footer div.footer__infos p:first-child {
+  line-height: 1.5rem;
+}
+footer div.footer__social div {
   margin-left: 2rem;
 }
-footer div.footer_social div a:not(:last-child) {
+footer div.footer__social div a:not(:last-child) {
   margin-right: 2rem;
 }
