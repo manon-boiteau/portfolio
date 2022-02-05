@@ -1,10 +1,3 @@
-import JavaScriptLogo from "../assets/images/javascript-logo.png";
-import TypeScriptLogo from "../assets/images/typescript-logo.png";
-import ReactLogo from "../assets/images/react-logo.png";
-import HtmlLogo from "../assets/images/html5-logo.png";
-import CssLogo from "../assets/images/css3-logo.png";
-import ReduxLogo from "../assets/images/redux-logo.png";
-import NodeLogo from "../assets/images/nodejs-logo.png";
 import ManonCV from "../assets/cv_manon-boiteau.pdf";
 
 const About = () => {
@@ -13,16 +6,21 @@ const About = () => {
       <div className="wrapper">
         <div className="about__photo">
           <div>
-            <img />
-          </div>
-          <div className="about__photo-techno">
-            <img src={HtmlLogo} alt="HTML5 logo" />
-            <img src={CssLogo} alt="CSS3 logo" />
-            <img src={ReactLogo} alt="ReactJS logo" />
-            <img src={ReduxLogo} alt="Redux logo" />
-            <img src={NodeLogo} alt="NodeJS logo" />
-            <img src={JavaScriptLogo} alt="JavaScript logo" />
-            <img src={TypeScriptLogo} alt="TypeScript logo" />
+            <div>
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+            </div>
+            <div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+            </div>
+            <div>
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+            </div>
           </div>
         </div>
 
@@ -31,6 +29,7 @@ const About = () => {
             <h2>Manon Boiteau</h2>
             <p>Frontend Web & Mobile Developer</p>
           </div>
+
           <div className="about__infos">
             <div>
               <p>
@@ -53,9 +52,6 @@ const About = () => {
               <h3>Learn more about me, if I were:</h3>
               <div>
                 <p>
-                  An object - <span>a headset</span>
-                </p>
-                <p>
                   An ingredient - <span>pepper</span>{" "}
                 </p>
                 <p>
@@ -74,6 +70,9 @@ const About = () => {
                   A TV show - <span>Mad Men</span>
                 </p>
                 <p>
+                  An object - <span>a headset</span>
+                </p>
+                <p>
                   A movie - <span>Parasite</span>
                 </p>
                 <p>
@@ -87,6 +86,7 @@ const About = () => {
                 </p>
               </div>
             </div>
+
             <div>
               <p>
                 Find more details{" "}
@@ -107,6 +107,16 @@ const About = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="about__tag">
+        <span className="tag">
+          JAVASCRIPT ⚬ TYPESCRIPT ⚬ REACTJS ⚬ REACT NATIVE ⚬ REDUX ⚬ NODEJS ⚬
+          HTML5 ⚬ CSS3 ⚬
+        </span>
+        <span className="tag">
+          JAVASCRIPT ⚬ TYPESCRIPT ⚬ REACTJS ⚬ REACT NATIVE ⚬ REDUX NODEJS ⚬
+          HTML5 ⚬ CSS3 ⚬
+        </span>
       </div>
     </section>
   );

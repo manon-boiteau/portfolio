@@ -46,6 +46,32 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 20;
+}
+header h1 {
+  color: black;
+  animation: 4s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(0%);
+  }
+  75% {
+    opacity: 0.7;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 header div.wrapper {
   display: flex;
@@ -72,12 +98,14 @@ header nav {
 header a {
   font-size: 0.8rem;
   text-transform: uppercase;
+  color: var(--link-hover);
 }
 header a:not(:last-child) {
   margin-right: 10rem;
 }
-header nav a:hover {
-  color: var(--link-hover);
+nav a:hover {
+  color: black;
+  font-weight: 400;
 }
 
 /* ABOUT */
@@ -101,17 +129,21 @@ div.about__photo {
 }
 div.about__photo > div:first-child {
   background-color: tomato;
-  height: 80%;
+  box-sizing: border-box;
+  height: 100%;
 }
-div.about__photo-techno {
+div.about__photo > div:first-child > div {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  height: 20%;
+  height: calc(100% / 3 - 0.3rem);
 }
-div.about__photo-techno img {
-  width: 4rem;
-  height: 4rem;
+div.about__photo > div:first-child > div:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+div.about__photo > div:first-child > div > div {
+  border: 1px solid blue;
+}
+div.about__photo > div:first-child > div > div:nth-child(2n) {
+  margin: 0 0.5rem;
 }
 div.about__name {
   line-height: 2rem;
@@ -133,6 +165,76 @@ div.about__infos > div:nth-child(2) div p {
 div.about__infos > div:last-child {
   text-align: end;
 }
+.about__tag {
+  display: flex;
+  overflow: hidden;
+  /* width: 100%; */
+  /* position: absolute;
+  top: 40%; */
+  transform: translateY(0%);
+  margin-bottom: 2rem;
+}
+.about__tag span {
+  font-size: 4rem;
+}
+.tag {
+  white-space: nowrap;
+  animation: scollTag 20s linear infinite;
+  color: tomato;
+}
+@keyframes scollTag {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+/* PROJECTS */
+.projects nav {
+  display: flex;
+  padding-bottom: 1rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid black;
+}
+.projects nav span:not(:last-child) {
+  margin-right: 6rem;
+}
+.projects__grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects__grid > div {
+  width: calc((100% - 1rem) / 3);
+  border: 1px solid black;
+  cursor: pointer;
+}
+.projects__grid > div:not(:nth-child(3n)) {
+  margin-right: 0.5rem;
+}
+.project__card {
+  margin-bottom: 0.5rem;
+  height: 18rem;
+  position: relative;
+}
+.project__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.project__card > div {
+  position: absolute;
+  top: calc(50% - 1rem);
+  width: 100%;
+  text-align: center;
+  padding: 0 1rem;
+  text-transform: uppercase;
+  z-index: 10;
+  font-size: 2rem;
+  font-weight: 700;
+}
 
 /* FOOTER */
 footer div.wrapper {
@@ -140,7 +242,6 @@ footer div.wrapper {
   align-items: center;
   padding: 1rem 0;
   border-top: 1px solid black;
-  text-transform: uppercase;
 }
 footer a {
   text-decoration: underline;
@@ -151,11 +252,19 @@ footer a:hover {
 footer div.footer__social {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   flex: 1;
   margin-left: 8rem;
+  text-transform: uppercase;
 }
 footer div.footer__infos p:first-child {
   line-height: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+footer div.footer__infos p:last-child {
+  font-size: 0.8rem;
+  margin-top: 1rem;
 }
 footer div.footer__social div {
   margin-left: 2rem;

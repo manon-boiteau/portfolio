@@ -6,7 +6,6 @@ import Home from "./containers/Home";
 import Projects from "./containers/Projects";
 import About from "./containers/About";
 import Articles from "./containers/Articles";
-import Contact from "./containers/Contact";
 import Footer from "./containers/Footer";
 import NoMatch from "./containers/NoMatch";
 
@@ -20,8 +19,6 @@ function App() {
         <Route path="/projects" element={<Projects />} />
 
         <Route path="/articles" element={<Articles />} />
-
-        <Route path="/contact" element={<Contact />} />
 
         <Route path="/" element={<Home />} />
 
