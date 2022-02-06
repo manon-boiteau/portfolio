@@ -22,6 +22,35 @@ const About = () => {
               <div>9</div>
             </div>
           </div>
+          <div className="about__skills">
+            <div>
+              <h3>Languages</h3>
+              <div>
+                <p>JavaScript (ES6)</p>
+                <p>TypeScript</p>
+                <p>HTML5</p>
+                <p>CSS3</p>
+              </div>
+            </div>
+            <div>
+              <h3>Frameworks & libraries</h3>
+              <p>ReactJS</p>
+              <p>React Native</p>
+              <p>Redux</p>
+              <p>NodeJS</p>
+            </div>
+            <div>
+              <h3>Tools</h3>
+              <p>iTerm</p>
+              <p>Git & Github</p>
+              <p>Postman</p>
+              <p>MongoDB</p>
+              <p>Visual Studio Code</p>
+              <p>Notion</p>
+              <p>Figma</p>
+              <p>Asana</p>
+            </div>
+          </div>
         </div>
 
         <div>
@@ -34,7 +63,32 @@ const About = () => {
             <div>
               <p>
                 From catering to events through communication, I am now a{" "}
-                <span>Web and Mobile Frontend Developer 👩🏻‍💻</span>
+                <span>Web and Mobile Frontend Developer 👩🏻‍💻</span> at{" "}
+                <a
+                  href="https://www.likeo.fr/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Likeo
+                </a>
+                ,<span> building things for web and mobile</span> with some
+                awesome people. I recently graduated from{" "}
+                <a
+                  href="https://www.lereacteur.io/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Le Reacteur
+                </a>{" "}
+                before completing six-month internship at{" "}
+                <a
+                  href="https://en.weward.fr/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  WeWard
+                </a>{" "}
+                in Paris.
               </p>
               <p>
                 Fan of my Persian Olaf, unconditional fan of gourmet tables and
@@ -76,7 +130,7 @@ const About = () => {
                   A movie - <span>Parasite</span>
                 </p>
                 <p>
-                  An animal - <span>a siberian cat</span>
+                  An animal - <span>a persian cat</span>
                 </p>
                 <p>
                   An actress - <span>Virginie Efira</span>
@@ -101,13 +155,14 @@ const About = () => {
               <p>
                 Download my{" "}
                 <a href={ManonCV} download>
-                  CV
+                  resume
                 </a>
               </p>
             </div>
           </div>
         </div>
       </div>
+
       <div className="about__tag">
         <span className="tag">
           JAVASCRIPT ⚬ TYPESCRIPT ⚬ REACTJS ⚬ REACT NATIVE ⚬ REDUX ⚬ NODEJS ⚬

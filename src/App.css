@@ -18,6 +18,7 @@
 body {
   font-family: "Oxygen", sans-serif;
   font-weight: 300;
+  font-size: 0.9rem;
 }
 a {
   color: black;
@@ -108,10 +109,17 @@ nav a:hover {
   font-weight: 400;
 }
 
+/* HOME */
+/* --- Hero --- */
+.hero__slider {
+  background-color: tomato;
+  height: 70vh;
+}
+
 /* ABOUT */
 .about span {
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .about a {
   font-weight: 400;
@@ -130,7 +138,8 @@ div.about__photo {
 div.about__photo > div:first-child {
   background-color: tomato;
   box-sizing: border-box;
-  height: 100%;
+  height: 75%;
+  margin-bottom: 1rem;
 }
 div.about__photo > div:first-child > div {
   display: flex;
@@ -144,6 +153,16 @@ div.about__photo > div:first-child > div > div {
 }
 div.about__photo > div:first-child > div > div:nth-child(2n) {
   margin: 0 0.5rem;
+}
+div.about__skills {
+  display: flex;
+}
+div.about__skills h3 {
+  color: tomato;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 div.about__name {
   line-height: 2rem;
@@ -172,7 +191,7 @@ div.about__infos > div:last-child {
   /* position: absolute;
   top: 40%; */
   transform: translateY(0%);
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 .about__tag span {
   font-size: 4rem;
@@ -198,6 +217,9 @@ div.about__infos > div:last-child {
   margin-top: -1rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid black;
+}
+.projects nav span {
+  cursor: pointer;
 }
 .projects nav span:not(:last-child) {
   margin-right: 6rem;
