@@ -1,5 +1,6 @@
 /* FONT */
-@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"); /* Title */
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap"); /* Project titles */
 
 /* COLORS */
 :root {
@@ -19,6 +20,17 @@ body {
   font-family: "Oxygen", sans-serif;
   font-weight: 300;
   font-size: 0.9rem;
+}
+/* For highlighting text on selection */
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: tomato;
+  background: #ff6347;
+}
+::selection {
+  color: white;
+  background: tomato;
 }
 a {
   color: black;
@@ -110,10 +122,39 @@ nav a:hover {
 }
 
 /* HOME */
-/* --- Hero --- */
 .hero__slider {
-  background-color: tomato;
   height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero__slider img,
+.hero__slider > div {
+  height: 100%;
+}
+.hero__slider img {
+  object-fit: cover;
+  width: 100%;
+}
+.arrow {
+  position: absolute;
+  cursor: pointer;
+}
+.arrow-left {
+  left: 4rem;
+}
+.arrow-right {
+  right: 4rem;
+}
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide-active {
+  opacity: 1;
+  transition-duration: 1s;
 }
 
 /* ABOUT */
@@ -187,9 +228,6 @@ div.about__infos > div:last-child {
 .about__tag {
   display: flex;
   overflow: hidden;
-  /* width: 100%; */
-  /* position: absolute;
-  top: 40%; */
   transform: translateY(0%);
   margin: 2rem 0;
 }
@@ -228,34 +266,120 @@ div.about__infos > div:last-child {
   display: flex;
   flex-wrap: wrap;
 }
-.projects__grid > div {
-  width: calc((100% - 1rem) / 3);
-  border: 1px solid black;
-  cursor: pointer;
-}
-.projects__grid > div:not(:nth-child(3n)) {
+.projects__grid > a:not(:nth-child(3n)) {
   margin-right: 0.5rem;
 }
 .project__card {
   margin-bottom: 0.5rem;
-  height: 18rem;
+  height: 22rem;
+  width: calc((100% - 1rem) / 3);
   position: relative;
+}
+.project__card h3 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  /* font-family: "Libre Barcode 39 Text", cursive; */
+  font-weight: 700;
 }
 .project__card img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: 80%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.project__card-img-hover {
+  position: absolute;
+}
+.project__card-img-hover:hover {
+  display: none;
 }
 .project__card > div {
-  position: absolute;
-  top: calc(50% - 1rem);
   width: 100%;
+  height: 15%;
   text-align: center;
-  padding: 0 1rem;
   text-transform: uppercase;
-  z-index: 10;
   font-size: 2rem;
+}
+.project__title {
+  background-color: black;
+  color: white;
+  padding: 2rem 0;
+  margin-top: -2rem;
+  text-align: center;
+}
+.links-logo {
+  width: 26px;
+  margin: 1.5rem 0;
+}
+.netlify {
+  margin-left: 1rem;
+}
+.project__techno {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.project__techno span {
+  border: 1px dotted tomato;
+  color: tomato;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.project__techno span:not(:last-child) {
+  margin-right: 1rem;
+}
+.project__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project__links > div {
+  display: flex;
+  align-items: center;
+}
+.project__intro {
+  display: flex;
+}
+.project__intro > div {
+  width: 50vw;
+  border: 1px dotted blue;
+}
+.project__intro > div:first-child {
+  margin-right: 1rem;
+}
+
+/* ARTICLES */
+.articles__intro {
+  margin: 2rem 0 4rem 0;
+}
+.articles__list {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+.articles__list > div > p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.articles__list a {
+  text-decoration: underline;
+}
+.articles__list a:hover {
+  color: tomato;
+}
+.articles__list-by-category > div {
+  margin-bottom: 2rem;
+}
+.articles__list-by-category > div p {
+  line-height: 2rem;
+}
+.articles__list-by-category h3 {
+  margin-bottom: 1.2rem;
   font-weight: 700;
+}
+.articles__next {
+  margin-bottom: 3rem;
 }
 
 /* FOOTER */

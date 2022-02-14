@@ -1,37 +1,183 @@
 [
   {
-    "projectTitle": "Titre 1",
-    "projectCategory": "bootcamp",
-    "projectImage": "",
+    "projectTitle": "WeWard - 100 best donators",
+    "projectCategory": "At work",
+    "projectType": "Mobile app",
+    "projectImageNB": "",
+    "projectImageColor": "",
     "projectIntro": "",
-    "projectTechno": ""
+    "projectGithubLink": "",
+    "projectNetlifyLink": "",
+    "mainImg": "",
+    "otherImg": [],
+    "projectTechno": [
+      "JavaScript",
+      "TypeScript",
+      "React Native",
+      "Redux",
+      "Tailwind"
+    ]
   },
   {
-    "projectTitle": "Titre 2",
+    "projectTitle": "Deliveroo (clone)",
     "projectCategory": "bootcamp",
-    "projectImage": "",
-    "projectIntro": "",
-    "projectTechno": ""
+    "projectType": "website",
+    "projectImageNB": "https://res.cloudinary.com/db6m8rlzz/image/upload/v1644234190/portfolio/deliveroo-project_mrf0jl.png",
+    "projectImageColor": "https://res.cloudinary.com/db6m8rlzz/image/upload/v1644247592/portfolio/deliveroo-color-project_uklvbw.png",
+    "projectIntro": "A web app (Le Pain Quotidien Montorgueil - clone page from Deliveroo) for ordering nice tasty & savoury things. View a description of the shop, the list of food you can order (name, description, price). 🛒 Fill your basket and get its total price.",
+    "projectGithubLink": "https://github.com/manon-boiteau/deliveroo-front-LeReacteur",
+    "projectNetlifyLink": "https://mydeliveroo-lereacteur-2021.netlify.app/",
+    "mainImg": "",
+    "otherImg": [],
+    "projectTechno": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "ReactJS",
+      "NodeJS",
+      "Express"
+    ]
   },
   {
-    "projectTitle": "Titre 3",
+    "projectTitle": "Marvel",
     "projectCategory": "bootcamp",
-    "projectImage": "",
-    "projectIntro": "",
-    "projectTechno": ""
+    "projectType": "website",
+    "projectImageNB": "https://res.cloudinary.com/db6m8rlzz/image/upload/v1644234170/portfolio/marvel-project_sekfnc.png",
+    "projectImageColor": "https://res.cloudinary.com/db6m8rlzz/image/upload/v1644235965/portfolio/mqrvel-color-project_plyyk8.png",
+    "projectIntro": "A web app (Marvel) for displaying all the Marvel characters and comics. View a description of each character and their related comics. Sign in and log in.",
+    "projectGithubLink": "https://github.com/manon-boiteau/marvel-front-LeReacteur",
+    "projectNetlifyLink": "",
+    "mainImg": "",
+    "otherImg": [],
+    "projectTechno": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "ReactJS",
+      "NodeJS",
+      "Express",
+      "Axios",
+      "Mongoose"
+    ]
   },
   {
-    "projectTitle": "Titre 4",
+    "projectTitle": "Vinted (clone)",
+    "projectCategory": "bootcamp",
+    "projectType": "website",
+    "projectImageNB": "https://res.cloudinary.com/db6m8rlzz/image/upload/v1644234190/portfolio/vinted-project_gbcvkq.png",
+    "projectImageColor": "https://res.cloudinary.com/db6m8rlzz/image/upload/v1644235965/portfolio/vinted-color-project_zh35pi.png",
+    "projectIntro": "A web app (Vinted clone) for selling clothes. Sign in and fill the form with all the informations about your shirt, dress or shoes. Then add it to the list. Possibility to simulate a purchase by filling the following CB number with 424242....",
+    "projectGithubLink": "https://github.com/manon-boiteau/vinted-front-LeReacteur",
+    "projectNetlifyLink": "https://myvinted-lereacteur-2021.netlify.app/",
+    "mainImg": "",
+    "otherImg": [],
+    "projectTechno": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "ReactJS",
+      "NodeJS",
+      "Express",
+      "Axios",
+      "Stripe",
+      "Mongoose",
+      "Cloudinary"
+    ]
+  },
+  {
+    "projectTitle": "Emojis Search",
+    "projectCategory": "bootcamp",
+    "projectType": "website",
+    "projectImageNB": "https://res.cloudinary.com/db6m8rlzz/image/upload/v1644235168/portfolio/emojis-project_npug1s.png",
+    "projectImageColor": "https://res.cloudinary.com/db6m8rlzz/image/upload/v1644247699/portfolio/emojis-color-project_lhdwzu.png",
+    "projectIntro": "",
+    "projectGithubLink": "https://github.com/manon-boiteau/emojis-LeReacteur",
+    "projectNetlifyLink": "https://emojissearch-lereacteur-2021.netlify.app/",
+    "mainImg": "",
+    "otherImg": [],
+    "projectTechno": ["HTML5", "CSS3", "JavaScript", "ReactJS"]
+  },
+  {
+    "projectTitle": "Monsieur Madeleine",
     "projectCategory": "freelance",
-    "projectImage": "",
+    "projectType": "website",
+    "projectImageNB": "https://res.cloudinary.com/db6m8rlzz/image/upload/v1644251616/portfolio/monsieur-madeleine-project_y5zql9.png",
+    "projectImageColor": "https://res.cloudinary.com/db6m8rlzz/image/upload/v1644251258/portfolio/monsieur-madeleine-color-project_x8ftt2.png",
     "projectIntro": "",
-    "projectTechno": ""
+    "projectGithubLink": "",
+    "projectNetlifyLink": "https://monsieur-madeleine-zanzibar.netlify.app/",
+    "mainImg": "",
+    "otherImg": [],
+    "projectTechno": ["HTML5", "CSS3", "JavaScript", "ReactJS", "Cloudinary"]
   },
   {
-    "projectTitle": "Titre 5",
-    "projectCategory": "freelance",
-    "projectImage": "",
+    "projectTitle": "Wheater App",
+    "projectCategory": "Technical test",
+    "projectType": "website",
+    "projectImageNB": "",
+    "projectImageColor": "",
     "projectIntro": "",
-    "projectTechno": ""
+    "projectGithubLink": "https://github.com/manon-boiteau/weather-app",
+    "projectNetlifyLink": "https://weather-test-2021.netlify.app/",
+    "mainImg": "",
+    "otherImg": [],
+    "projectTechno": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "ReactJS",
+      "Styled Components"
+    ]
+  },
+  {
+    "projectTitle": "The famous to do list",
+    "projectCategory": "Technical test",
+    "projectType": "website",
+    "projectImageNB": "",
+    "projectImageColor": "",
+    "projectIntro": "",
+    "projectGithubLink": "https://github.com/manon-boiteau/relax-test",
+    "projectNetlifyLink": "",
+    "mainImg": "",
+    "otherImg": [],
+    "projectTechno": ["HTML5", "CSS3", "JavaScript", "ReactJS"]
+  },
+  {
+    "projectTitle": "WeWard - Transaction history",
+    "projectCategory": "At work",
+    "projectType": "Mobile app",
+    "projectImageNB": "",
+    "projectImageColor": "",
+    "projectIntro": "",
+    "projectGithubLink": "",
+    "projectNetlifyLink": "",
+    "mainImg": "",
+    "otherImg": [],
+    "projectTechno": [
+      "JavaScript",
+      "TypeScript",
+      "React Native",
+      "Redux",
+      "Tailwind"
+    ]
+  },
+  {
+    "projectTitle": "WeWard - Fundraising",
+    "projectCategory": "At work",
+    "projectType": "Mobile app",
+    "projectImageNB": "",
+    "projectImageColor": "",
+    "projectIntro": "",
+    "projectGithubLink": "",
+    "projectNetlifyLink": "",
+    "mainImg": "",
+    "otherImg": [],
+    "projectTechno": [
+      "JavaScript",
+      "TypeScript",
+      "React Native",
+      "Redux",
+      "Tailwind"
+    ]
   }
 ]

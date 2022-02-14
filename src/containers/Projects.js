@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import projects from "../projects.json";
 
 const Projects = () => {
@@ -18,9 +19,14 @@ const Projects = () => {
         categorySelected === "all"
       ) {
         setListOfProjects(projects);
-      } else {
+      } else if (
+        filteredCategories.length === 0 &&
+        categorySelected !== "all"
+      ) {
         setListOfProjects([]);
         setNoProjectsMsg("Be patient! Nice projects are coming 😇");
+      } else {
+        setListOfProjects(projects);
       }
     };
     filteredCategory(projects);
@@ -54,18 +60,38 @@ const Projects = () => {
           >
             Freelance
           </span>
+          <span
+            onClick={() => setCategorySelected("other")}
+            style={{ fontWeight: categorySelected === "other" && 700 }}
+          >
+            Other
+          </span>
         </nav>
 
         <div className="projects__grid">
           {listOfProjects.length !== 0 ? (
             listOfProjects.map((project, idx) => {
               return (
-                <div key={idx} className="project__card">
-                  <img />
+                <Link
+                  key={idx}
+                  to={`/project/${project.projectTitle}`}
+                  className="project__card"
+                >
+                  <img
+                    src={project.projectImageNB}
+                    alt={project.projectTitle}
+                    className="project__card-img-hover"
+                  />
+
+                  <img
+                    src={project.projectImageColor}
+                    alt={project.projectTitle}
+                  />
+
                   <div>
-                    <p>{project.projectTitle}</p>
+                    <h3>{project.projectTitle}</h3>
                   </div>
-                </div>
+                </Link>
               );
             })
           ) : (
